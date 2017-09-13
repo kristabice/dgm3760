@@ -1,0 +1,42 @@
+/* header*/
+
+.mainMenu{
+	
+	
+	
+		
+		li{
+			float: left;
+			list-style: none;
+			text-decoration: none;
+			padding: 1em;
+			color: $maincolor;
+			
+		
+			
+			
+			a{
+				text-decoration: none;
+				color: $maincolor;
+
+				
+			}
+		}
+	
+	.active{
+		border-bottom: 1px solid $maincolor;
+	}
+	
+}
+
+
+ul li:hover{
+		border-bottom: 1px solid $maincolor;
+}
+
+p{
+	margin-left: 2%;
+	font-size: 1.1em;
+	padding: 2em;
+	
+}

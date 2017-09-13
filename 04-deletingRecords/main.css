@@ -1,0 +1,59 @@
+/* Scss Document */
+/*Body*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+.keepOpen {
+  clear: both; }
+
+
+
+fieldset {
+  border: 2px #CD4557 solid;
+  padding: 1.5em; 
+  width: 30%;
+	margin-left: 2em;
+}
+  fieldset legend {
+    border: 2px #CD4557 solid;
+    padding: .5em;
+    font-weight: 800;
+    letter-spacing: .1em;
+    color: #CD4557;
+    font-size: 1.5em; }
+
+
+label{
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.2em;
+	color: #778574;
+	
+}
+
+p{
+	color: #778574;
+	font-size: 1.2em;
+	border-bottom: solid 1px #cd4557;
+}
+
+.submitBtn {
+  display: block;
+  margin: auto;
+  width: 92%;
+  margin-top: 1em;
+  background-color: white;
+  border: 2px solid #778574;
+  color: #778574;
+  padding: 1em;
+  font-size: 1.2em;
+
+	
+}
+
+.submitBtn:hover {
+  background-color: #CD4557;
+  color: #F0DB91;
+  border: 2px solid #CD4557; }
+

@@ -1,0 +1,74 @@
+/* form*/
+
+.formLeft{
+	float: right;
+	width: 30%;
+	margin-right: 8em;
+}
+
+.form{
+	width: 100%;
+	margin: auto;
+	color: $darkcolor;
+	background-color: $lightcolor;
+}
+
+
+input{
+	width: 92%;
+	margin: auto;
+	color: $maincolor;
+	padding: .5em;
+	font-size: 1.1em;
+	border: 1px solid $lightcolor;
+	margin-top: .5em;
+}
+
+fieldset{
+	border:  2px $lightcolor solid;
+	padding: 1em;
+	
+	
+	legend{
+		border: 2px $lightcolor solid;
+		padding: .5em;
+		font-weight: $heavy;
+		letter-spacing: .1em;
+		color: $darkcolor;
+		font-size: 1.5em;
+	}
+	
+	
+}
+
+span{
+	font-weight: $heavy;
+	margin-top: 1.5em;
+}
+
+.button{
+	display: block;
+	margin: auto;
+	width: 92%;
+	margin-top: 1em;
+	background-color: white;
+	border: 2px solid $lightcolor;
+	color: $darkcolor;
+}
+
+.button:hover{
+	background-color: $maincolor;
+	color: $lightcolor;
+	border: 2px solid $lightcolor;
+	
+}
+
+.message{
+	width: 90%;
+	height: 15em;
+	color: $maincolor;
+	border: none;
+	padding: 1em;
+	font-size: 1.1em;
+	font-family: $fontFamily;
+}

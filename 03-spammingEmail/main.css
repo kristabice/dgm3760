@@ -1,0 +1,88 @@
+/* Scss Document */
+/*Body*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+.keepOpen {
+  clear: both; }
+
+/* header*/
+.mainMenu li {
+  float: left;
+  list-style: none;
+  text-decoration: none;
+  padding: 1em;
+  color: #CD4557; }
+  .mainMenu li a {
+    text-decoration: none;
+    color: #CD4557; }
+.mainMenu .active {
+  border-bottom: 1px solid #CD4557; }
+
+ul li:hover {
+  border-bottom: 1px solid #CD4557; }
+
+p {
+  margin-left: 2%;
+  font-size: 1.1em;
+  padding: 2em; }
+
+/* form*/
+.formLeft {
+  float: right;
+  width: 30%;
+  margin-right: 8em; }
+
+.form {
+  width: 100%;
+  margin: auto;
+  color: #778574;
+  background-color: #F0DB91; }
+
+input {
+  width: 92%;
+  margin: auto;
+  color: #CD4557;
+  padding: .5em;
+  font-size: 1.1em;
+  border: 1px solid #F0DB91;
+  margin-top: .5em; }
+
+fieldset {
+  border: 2px #F0DB91 solid;
+  padding: 1em; }
+  fieldset legend {
+    border: 2px #F0DB91 solid;
+    padding: .5em;
+    font-weight: 800;
+    letter-spacing: .1em;
+    color: #778574;
+    font-size: 1.5em; }
+
+span {
+  font-weight: 800;
+  margin-top: 1.5em; }
+
+.button {
+  display: block;
+  margin: auto;
+  width: 92%;
+  margin-top: 1em;
+  background-color: white;
+  border: 2px solid #F0DB91;
+  color: #778574; }
+
+.button:hover {
+  background-color: #CD4557;
+  color: #F0DB91;
+  border: 2px solid #F0DB91; }
+
+.message {
+  width: 90%;
+  height: 15em;
+  color: #CD4557;
+  border: none;
+  padding: 1em;
+  font-size: 1.1em;
+  font-family: "Open Sans", sans-serif; }

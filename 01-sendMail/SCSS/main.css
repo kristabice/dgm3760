@@ -1,0 +1,55 @@
+/*  */
+/* my styling*/
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; }
+
+.container {
+  display: block;
+  margin: auto; }
+
+h1 {
+  display: block;
+  margin: 0 9%;
+  font-weight: 400;
+  letter-spacing: .03;
+  color: #b50303;
+  padding: .5em; }
+
+.button {
+  margin: auto;
+  padding: .3em 1em;
+  background-color: #6EB1B6;
+  font-size: 2em;
+  color: white;
+  border: none;
+  margin: 1.5em 0 0 9%; }
+
+select {
+  color: #6EB1B6; }
+  select option {
+    color: #6EB1B6; }
+
+span.color {
+  text-align: center;
+  font-size: 12pt;
+  color: #6EB1B6;
+  margin-left: 2%;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+fieldset {
+  width: 80%;
+  padding: 1em;
+  margin: auto; }
+  fieldset input {
+    padding: .5em;
+    color: #E0E3DA; }
+  fieldset span {
+    font-size: 1.4em;
+    color: #b50303;
+    letter-spacing: .03em; }
+  fieldset legend {
+    font-size: 18pt;
+    color: #E0E3DA;
+    letter-spacing: .03em; }

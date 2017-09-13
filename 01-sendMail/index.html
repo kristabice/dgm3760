@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Information Request</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet">
+</head>
+
+
+<body>
+<div class="container">
+
+<h1>Information</h1>
+
+<form action="receive.php" method="POST" enctype="multipart/form-data" name="personalInfo">
+	<fieldset>
+		<legend>Personal Information</legend>
+		<span>Full Name:</span><br><input type="text" name="name" placeholder="John Doe" value="" ><br>
+		<span>Phone Number:</span><br>
+		<input type="tel" name="phone" placeholder="123-456-7891" pattern="[0-9-.()]{10,20}" value=""><br>
+		<span>Email Address:</span><br>
+		<input type="email" name="email" placeholder="johndoe@gmail.com" value="">
+	</fieldset>
+	<fieldset>
+		<legend>Interests</legend>
+		<span>Favorite Color:</span><br>
+		<span class="color">Blue</span><input  type="radio" name="color" value="Blue"><br>
+		<span class="color">Red</span> <input  type="radio" name="color" value="Red"><br>
+		<span class="color">White</span> <input  type="radio" name="color" value="White"><br>
+		
+		<span>Dream Car</span><br><select name="car">
+			<option value="Audi">Audi</option>
+			<option value="Mercedees">Mercedees</option>
+			<option value="Porche">Porche</option>		</select>
+	</fieldset>
+	<input class="button" type="submit" value="SUBMIT"/>
+	
+</form>
+
+
+</div>
+
+</body>
+</html>

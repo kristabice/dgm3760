@@ -1,0 +1,30 @@
+/* Scss Document */
+$maincolor: #CD4557;
+$secondcolor: #6CB695;
+$lightcolor: #F0DB91;
+$darkcolor: #778574;
+$mainfont: #f2f2f2;
+
+$fontFamily: 'Open Sans', sans-serif;
+$heavy: 800;
+$light: 400;
+
+
+/*Body*/
+
+body{
+	font-family: $fontFamily;
+	font-weight: $light;
+}
+
+
+
+.keepOpen{
+    clear: both;
+}
+
+@import 'header.scss';
+@import 'form.scss';
+
+
+	

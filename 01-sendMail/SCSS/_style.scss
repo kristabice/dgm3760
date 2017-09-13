@@ -1,0 +1,78 @@
+/* my styling*/
+
+body{
+	font-family: $font-type;
+	font-weight: $light;
+}
+
+.container {
+	display: block;
+	margin: auto;
+
+	
+}
+h1{
+	display: block;
+	margin: 0 9%;
+	font-weight: $light;
+	letter-spacing: .03;
+	color: $maincolor;
+	padding: .5em;
+}
+
+.button{
+	margin: auto;
+	padding: .3em 1em;
+	background-color: $accent;
+	font-size: 2em;
+	color: white;
+	border: none;
+	margin: 1.5em 0 0 9%;
+	
+}
+
+select {
+	color: $accent;
+	
+	option{
+	color: $accent;
+	
+}
+}
+
+span.color{
+	text-align: center;
+	font-size: 12pt;
+	color: $accent;
+	margin-left: 2%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+fieldset{
+	width: 80%;
+	padding: 1em;
+	margin: auto;
+	input{
+		padding: .5em;
+		color: $place;
+	}
+	
+	span{
+		font-size: 1.4em;
+		color: $maincolor;
+		letter-spacing: .03em;
+	}
+	
+	
+legend{
+	font-size: 18pt;
+	color:  $place;
+	letter-spacing: .03em;
+	
+	
+	
+	
+	
+	
+	}
+}
