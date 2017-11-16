@@ -7,14 +7,17 @@
 <meta charset="utf-8">
 <title>05 - Manage Records</title>
 </head>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
 
+<?php include 'footer.php';?>
 <body>
 
 
+<div class="container">
 
 
-
-<form action="add.php" method="POST" enctype="multipart/form-data">
+<form action="add.php" method="POST" enctype="multipart/form-data" class="clearFix">
 
 <fieldset>
 	<legend>Name</legend>
@@ -26,7 +29,7 @@
 
 <fieldset>
 	<legend>Department</legend>
-	<span>Please Select:</span>
+	<span>Please Select:</span><br>
 	<select name="dept">
 		<option>Internet Tech</option>
 		<option>Web Developement</option>
@@ -38,18 +41,18 @@
 	
 	<fieldset>
 		<legend>Photo</legend>
-		<span>Pick a photo of this employee</span>
-		<input type="file" name="photo"><br>
+		<span class="photo">Pick a photo of this employee</span>
+		<input type="file" name="photo" class="file"><br>
 		
-		<span>File must be saved as a .jpg file.</span><br>
-		<span>Please crop photo to 150px wide X 200px tall before uploading</span>
+		<span class="photo">File must be saved as a .jpg file.</span><br>
+		<span class="photo">Please crop photo to 150px wide X 200px tall before uploading</span>
 	</fieldset>
 	<input type="submit" name="submit" value="Submit" class="submitbtn">
 	
 </form>
 
 
+	</div>
 
-<?php include 'footer.php';?>
 </body>
 </html>

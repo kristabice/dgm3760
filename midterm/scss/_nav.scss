@@ -1,0 +1,71 @@
+/* STYLING THE BODY */
+body{
+	font-family: $font;
+	font-weight: $light;
+}
+// styles anchor tags
+a{
+		color: $darkC;
+		text-decoration: none;
+}
+
+.mainMenu{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+/* CSS Document */
+header{
+	margin-top: 2em;
+	height: 15em;
+	.imgCont{
+		width: 100%;
+		
+		img{
+			width: 100%;
+		}
+	}
+
+	
+	
+}
+
+nav{
+
+	order: 1;
+	width: 20%;
+	align-self: center;
+	ul{
+		
+		li{
+			
+			float: left;
+			a{
+			font-size: 1.2em;
+			}
+		}
+	}
+}
+
+.log{
+	order:  3; 
+	width: 20%;
+	align-self: center;
+	a{
+	font-size: 1.2em;
+	text-align:right;
+		float: right;
+	}
+}
+
+.logo{
+	order: 2;
+	width: 20%;
+
+	
+	img{
+		width: 100%;
+	}
+}

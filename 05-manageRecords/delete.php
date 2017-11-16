@@ -26,22 +26,27 @@ $result = mysqli_query($dbconnection, $query) or die ('query failed');
 <head>
 <meta charset="utf-8">
 <title>Delete Employees</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
+
 </head>
+<?php include 'footer.php';?>
 
 <body>
-<h1>Delete Employees</h1>
+<div class="container">
+<h1 class="clearFix">Delete Employees</h1>
 
 <?php
 	
 //----------------------------DISPLAY WHAT FOUND-------------------------------------------------
 	
 	while($row = mysqli_fetch_array($result)){
-		echo '<p>';
+		echo '<p class="nameInfo">';
 		echo $row['last'].', '.$row['first'].' - '.$row['dept'];
 		
-		echo '  <a href="delete2.php?id='.$row['id'].'">delete</a>';
-		
+		echo '  <a class="deletebtn" href="delete2.php?id='.$row['id'].'">delete</a>';
 		echo '</p>';
+		
 	}
 	
 	//WE'RE DONE SO HANG UP-----------------------------------------------------------------------
@@ -49,7 +54,7 @@ $result = mysqli_query($dbconnection, $query) or die ('query failed');
 	
 ?>	
 
-<?php include 'footer.php';?>
 
+	</div>
 </body>
 </html>

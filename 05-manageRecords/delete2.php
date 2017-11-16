@@ -60,17 +60,23 @@ $found = mysqli_fetch_array($result);
 <html>
 <head>
 <meta charset="utf-8">
-<title>Detail employee directory</title>
+<title>Delete employees - 2</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
+
+
 </head>
+<?php include 'footer.php';?>
 
 <body>
-<h1>Deleting and Employee!</h1>
+<div class="container">
+<h1 class="clearFix">Deleting and Employee!</h1>
 <div class="employee">
 	<form action="delete2.php" method="post">
 		<?php
 		//Display what we found
-		echo '<h2>'.$found['first'].' '.$found['last'].'</h2>';
-		echo '<p>';
+		echo '<h2 class="nameInfo">'.$found['first'].' '.$found['last'].'</h2>';
+		echo '<p class="nameInfo">';
 		echo $found['dept'].'<br>'.$found['phone'];
 		echo '</p>';
 
@@ -78,13 +84,13 @@ $found = mysqli_fetch_array($result);
 		?>
 		<input type="hidden" name="photo" value="employees/<?php echo $found['photo'];?>"/>
 		<input type="hidden" name="id" value="<?php echo $found['id'];?>"/>
-		<input type="submit" name="submit" value="DELETE THIS PERSON"/>
-		&nbsp; <a href="delete.php">Cancel</a>
+		<input type="submit" name="submit" value="DELETE THIS PERSON" class="submit"/>
+		&nbsp; <a href="delete.php" class="cancel">Cancel</a>
 	</form>
 	
 	
 </div>
 
-
+	</div><!-- containter end -->
 </body>
 </html>

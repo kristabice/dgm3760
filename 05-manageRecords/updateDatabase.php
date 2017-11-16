@@ -26,10 +26,16 @@ $photo = $_POST[photo];
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
+<title>Update Database</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
 
-<body>
+
+</head>
+<?php include 'footer.php';?>
+
+<body >
+<div class="clearFix container">
 
 <?php
 	
@@ -44,6 +50,6 @@ $photo = $_POST[photo];
 	
 	
 	?>
-<?php include 'footer.php';?>
+	</div>
 </body>
 </html>

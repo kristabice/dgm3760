@@ -1,0 +1,266 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+  box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 12pt;
+	font-weight: 400;
+	width: 100%;
+
+
+}
+
+/* ------ Navigation MENU ------*/
+
+header ul{
+	
+	width: 100%;
+	height: 4.5em;
+	background-color: #F2DDD2;
+	font-weight: 800;
+}
+
+header nav ul li{
+	list-style-type: none;
+	font-size: 1.4em;
+	
+	
+}
+
+header nav ul li a{
+	text-decoration: none;
+	float: left;
+	padding: 1.12em;
+	color: #5EB9B8;
+}
+
+ ul li a:hover{
+	transition: all .4s ease; 
+	 background-color: #B4D6CF;
+	color:#666;
+}
+
+/* ---- CONTAINER -----*/
+.container p{
+	padding: 1em;
+}
+
+
+
+.container{
+	padding: 1.5em;
+	width: 100%;
+	
+}
+/* ----- FORM STYLING -----*/
+input{
+	padding: .5em;
+	font-size: 1.2em;
+	border: 1px solid #666;
+	color: #666;
+}
+fieldset{
+	padding: .5em;
+	margin-top: .5em;
+}
+fieldset legend{
+	width: 100%;
+	margin-bottom: .3em;
+	border-bottom: 3px solid #5EB9B8;
+	font-size: 1.5em;
+	color: #5EB9B8;
+	font-weight: 800;
+}
+
+fieldset span{
+	display: inline-block;
+	margin: 2em  .5em .5em 0;
+	font-size: 1.1em;
+	color: #5EB9B8;
+
+}
+
+select {
+	color: #666;
+	border: 1px solid #666;
+	padding: .5em;
+	font-size: 1.1em;
+	margin-bottom: 1em;
+}
+
+
+input.submitbtn{
+	display: block;
+	width: 40%;
+	padding: .7em;
+	text-align: center;
+	border: none;
+	color: #666;
+	background-color: #F2DDD2;
+	font-weight: 800;
+	margin: 3em auto;
+	
+	
+	
+}
+input.submitbtn:hover{
+	background-color:  #B4D6CF;
+	transform: scale(1.1);
+	transition: all 1s ease-in-out;
+	
+}
+
+input.file{
+	border: none;
+	padding: 1em;
+	
+}
+
+/*------- EMPLOYEE VIEW -------*/
+.detail{
+	display: block;
+}
+.background{
+	display: block;
+	border: 1px solid #b4d6cf;
+	padding: 1em;
+	margin: 1em;
+	font-size: 1.2em;
+	letter-spacing: .1em;
+	background-color:  #B4D6CF;
+	color: #666;
+	vertical-align: middle;
+	
+}
+.detailList{
+display: inline-block;
+	
+margin: auto;
+	
+}
+.imageList{
+	display: inline-block;
+	margin: auto;
+	
+
+}
+
+
+/*------ Delete Employee-------*/
+h2.nameInfo{
+	font-size: 1.5em;
+	padding: .5em .5em 0 .7em;
+	color: #5EB9B8;
+	font-weight: 800;
+}
+
+
+/*------ NAME LIST -------*/
+p a.nameInfo {
+	display: inline-block;
+	padding: .5em;
+	margin: .1em 1em .1em 0;
+	text-decoration: none;
+	font-size: 1.2em;
+	color:#666;
+	
+}
+p a.nameInfo:hover{
+	border-bottom: solid 4px #5EB9B8;
+
+	
+}
+
+a.update{
+	padding: .5em 1em;
+	border: 4px solid #5EB9B8;
+	text-decoration: none;
+	color: #666;
+	text-align: center;
+	font-weight: 800;
+	letter-spacing: .1em;
+}
+
+a.update:hover{
+	background-color: #5EB9B8;
+}
+
+h1{
+	font-size: 1.5em;
+	font-weight: 800;
+	letter-spacing: .2em;
+	color: #666;
+	padding: 1em 0 .3em 1em;
+	margin-bottom: 1em;
+	border-bottom: 4px solid #666;
+}
+
+/*-----DELETE BUTTON/PAGE------*/
+.deletebtn{
+	
+	padding: .5em 1em;
+	margin-left: 1em;
+	border: 4px solid #5EB9B8;
+	text-decoration: none;
+	color: #666;
+	text-align: center;
+	font-weight: 800;
+	letter-spacing: .1em;
+}
+
+a.deletebtn:hover{
+	background-color: #5EB9B8;
+}
+
+.nameInfo {
+	padding: 1em;
+	margin: .1em 1em .1em 0;
+	text-decoration: none;
+	font-size: 1.2em;
+	color:#666;
+	line-height: 2em;
+	
+}
+
+
+input.submit{
+
+	width: 40%;
+	padding: .7em;
+	text-align: center;
+	border: none;
+	color: #666;
+	background-color: #F2DDD2;
+	font-weight: 800;
+	
+	
+	
+	
+}
+input.submit:hover{
+	background-color:  #B4D6CF;
+	transition: all 1s ease-in-out;
+	
+}
+
+.cancel{
+	text-decoration: none;
+	padding: .7em;
+	color: #5eb9bb;
+	font-size: 1.2em;
+	border: 4px solid #F2DDD2;
+}
+
+.cancel:hover{
+	color: #666;
+	background-color: #F2DDD2;
+}
+
+
+/* ------ cLEAR FIX ------*/
+.clearFix{
+	clear: both;
+}

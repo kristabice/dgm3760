@@ -1,0 +1,185 @@
+/* CSS Document */
+/* CSS Document */
+/* PAGES */
+.container {
+  width: 80%;
+  margin: 4em auto; }
+  .container .row {
+    float: left;
+    width: 20%;
+    padding: 1em;
+    height: 300px;
+    margin-top: 4em;
+    transition: all .2s ease-in-out; }
+    .container .row .details {
+      display: none; }
+    .container .row h1 {
+      color: #314e8b;
+      font-size: 1.2em;
+      font-weight: 800;
+      text-align: center; }
+    .container .row h3 {
+      text-align: center; }
+    .container .row img {
+      width: 100%; }
+  .container .row:hover .details {
+    display: block;
+    text-align: center;
+    border: 1px solid #121724;
+    color: #121724;
+    padding: .5em;
+    transition: all .2s ease-in-out; }
+  .container .row:hover .details:hover {
+    background-color: #121724;
+    color: #64a2d7;
+    padding: .6em; }
+
+/* STYLING THE BODY */
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400; }
+
+a {
+  color: #121724;
+  text-decoration: none; }
+
+.mainMenu {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+/* CSS Document */
+header {
+  margin-top: 2em;
+  height: 15em; }
+  header .imgCont {
+    width: 100%; }
+    header .imgCont img {
+      width: 100%; }
+
+nav {
+  order: 1;
+  width: 20%;
+  align-self: center; }
+  nav ul li {
+    float: left; }
+    nav ul li a {
+      font-size: 1.2em; }
+
+.log {
+  order: 3;
+  width: 20%;
+  align-self: center; }
+  .log a {
+    font-size: 1.2em;
+    text-align: right;
+    float: right; }
+
+.logo {
+  order: 2;
+  width: 20%; }
+  .logo img {
+    width: 100%; }
+
+/* details scss*/
+.col {
+  display: flex; }
+
+.dImg {
+  width: 30%;
+  flex-direction: row; }
+  .dImg img {
+    width: 100%; }
+
+.dRow {
+  width: 50%;
+  margin-left: 1.5em;
+  flex-direction: row; }
+  .dRow h1 {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #314e8b; }
+  .dRow p {
+    line-height: 2em; }
+
+.btn {
+  float: right;
+  width: 50%;
+  margin-top: 3em; }
+  .btn .button {
+    border: 1px solid #314e8b;
+    font-size: 1.2em;
+    border-radius: 6px;
+    padding: .5em;
+    color: #314e8b;
+    margin: .5em; }
+  .btn .del {
+    color: darkred;
+    border: 1px solid darkred; }
+  .btn .button:hover {
+    background-color: #314e8b;
+    color: #eee; }
+  .btn .del:hover {
+    background-color: darkred;
+    color: #eee; }
+
+/* ADD AND EDIT PAGE */
+form {
+  width: 100%; }
+
+fieldset {
+  width: 80%;
+  margin: auto; }
+  fieldset legend {
+    font-size: 1.4em;
+    color: #314e8b;
+    font-weight: 800;
+    padding: 1em 0;
+    letter-spacing: .1em; }
+  fieldset label {
+    font-size: 1.2em;
+    color: #314e8b;
+    padding: 1em 0; }
+    fieldset label input, fieldset label select, fieldset label .photo input, .photo fieldset label input, fieldset label textarea {
+      padding: .5em;
+      margin: .3em 0 2.5em 0;
+      width: 100%;
+      font-size: 1.05em;
+      color: #888; }
+    fieldset label select {
+      width: 50%; }
+    fieldset label textarea {
+      height: 200px;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: .91em; }
+
+.photo legend {
+  font-weight: 400; }
+
+.submitbtn {
+  width: 20%;
+  padding: 1em;
+  font-size: 1em;
+  border: 1px solid #314e8b;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: 800;
+  color: #314e8b; }
+
+.submitbtn:hover {
+  background-color: #314e8b;
+  color: #eee; }
+
+/* footer */
+footer {
+  margin-top: 6em;
+  background-color: #314e8b; }
+  footer p {
+    color: #eee;
+    text-align: center;
+    padding: 2em; }
+
+.clearFix {
+  clear: both; }

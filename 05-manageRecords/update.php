@@ -33,14 +33,19 @@ if(file_exists('employees/'.$found['photo']) && $found['photo'] <> ''){
 <head>
 <meta charset="utf-8">
 <title>05 - update Records</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
+
+
 </head>
+<?php include 'footer.php';?>
 
 <body>
 
 
 
-
-<form action="updateDatabase.php" method="POST" enctype="multipart/form-data">
+<div class="container">
+<form action="updateDatabase.php" method="POST" enctype="multipart/form-data"  class="clearFix">
 
 <fieldset>
 	<legend>Name</legend>
@@ -77,8 +82,7 @@ if(file_exists('employees/'.$found['photo']) && $found['photo'] <> ''){
 	
 </form>
 
+</div>
 
-
-<?php include 'footer.php';?>
 </body>
 </html>

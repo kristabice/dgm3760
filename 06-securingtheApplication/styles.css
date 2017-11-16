@@ -1,0 +1,181 @@
+body, nav, div, h1, h2, textarea {
+	
+	font-family: 'Mukta', sans-serif;
+	font-size: 12pt;
+	color: #445A54;
+	background-color: #EFEFEF;
+	letter-spacing: .06em;
+
+}
+ /* STYLE THE BODY ITEMS*/
+h1{
+	font-size: 2.2em;
+	color:#455C57;
+	padding: 1.2em 2%;
+	
+}
+
+article{
+	padding: 0 2%;
+	
+}
+
+h3{
+	font-size: 1.5em;
+	color: #445A54;
+	padding: 1em 0 .2em 0;
+}
+
+p{
+	color:#89A08B;
+	font-size: 1.2em;
+	padding: .3em 0;
+}
+
+/* Navigation Styling */
+.navStyle{
+	width: 100%;
+	background-color:#CDD7D2;
+	height: 3.5em;
+
+	}
+nav{
+	float: right;
+
+	
+}
+
+
+nav ul a li{
+
+	float: left;
+	padding: .65em .5em;
+	list-style-type: none;
+	background-color:#CDD7D2;
+
+}
+
+nav ul a{
+	text-decoration: none;
+	color: #445A54;
+	font-size: 1.5em;
+	
+}
+nav ul  a:hover li , nav ul a li:hover{
+
+	background-color: #122726;
+	color: #D6CFC2;
+	
+}
+  a.active li{
+	background-color: #445A54;
+	  color: #cdd7d2;
+}
+/*STYLE FORM*/
+fieldset{
+	padding: 0 2%;
+}
+fieldset legend{
+	font-size: 1.8em;
+	padding: 1em 0;	
+	letter-spacing: .02em;
+	color:#89A08B;
+}
+form span{
+	font-size: 1.5em;
+}
+form input, form textarea{
+	margin: 1em 0;
+	width: 60%;
+	padding: .5em;
+	font-size: 1.2em;
+	border: solid 2px #89A08B;
+	color: #89A08B;
+	border-radius: .5em;
+	
+}
+form input::placeholder{
+	color: #89A08B;
+}
+form select{
+	margin: 1em 0;
+	width: 63%;
+	padding: .5em;
+	font-size: 1.2em;
+	border: solid 2px #89A08B;
+	color: #89A08B;
+	border-radius: .5em;
+	
+}
+
+form textarea{
+	height: 8em;
+	background-color: #FFFFFF;
+	
+}
+
+.submit{
+	margin: 1em 2%;
+	width: 60%;
+	padding: .5em;
+	font-size: 1.2em;
+	border: 2px solid  #89A08B;
+	color: #89A08B;
+	background-color:#f2f2f2;
+	border-radius: .5em;
+	
+}
+.submit:hover{
+	color: #cdd7d2;
+	background-color: #89A08B;
+}
+
+
+/* APPROVE/DELETE BUTTON */
+.approve, .delete{
+	text-decoration: none;
+	font-size: .86em;
+	margin-top: 1em;
+	padding: .5em;
+	
+}
+
+p.date{
+	margin: .2em 0 3em 0;
+}
+
+.approve{
+	color: #445A54;
+	border: 1px solid #445A54;
+	border-radius: .5em;
+	margin-right: .6em;
+
+}
+
+.delete{
+	color:#934E6B;
+	border: 1px solid #934E6B;
+	border-radius: .5em;
+	margin-right: .6em;
+	
+}
+.delete:hover{
+	background-color: #934E6B;
+	color: #cdd7d2;
+}
+.approve:hover{
+	background-color: #445a54;
+	color:  #cdd7d2;
+}
+/* CONTAINER WIDTH */
+
+#container{
+	width: 80%;
+	margin: auto;
+	display: block;
+	
+}
+/*Clear Fix*/
+.clearFix{
+	clear: both;
+}

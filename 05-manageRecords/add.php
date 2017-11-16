@@ -73,24 +73,36 @@ else{
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>ADD</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
+
 </head>
 
-<body>
+<?php include 'footer.php';?>
 
+<body>
+<div class="clearFix container">
+
+<div class="background">
+
+<div class="imageList">
 <?php
 	
-	echo "$first $last <br>";
-	echo "$department <br>";
-	echo "$phone <br>";
-	
 	echo '<img src="'.$filepath.$filename.'" alt="photo"/>';
+	?>
+	</div>
+	 <div class="detailList">
+	<?php
+	echo "<p> $first $last </p><br>";
+	echo "<p>$department </p><br>";
+	echo "<p> $phone </p><br>";
+	
 
 	
-	
-	
-	
 	?>
-<?php include 'footer.php';?>
+		 </div>
+</div>
+	</div>
 </body>
 </html>

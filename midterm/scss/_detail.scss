@@ -1,0 +1,64 @@
+/* details scss*/
+.col{
+	display: flex;
+}
+
+.dImg {
+	width: 30%;
+	flex-direction: row;
+	
+	
+	img{
+		width: 100%;
+	}
+}
+
+
+.dRow{
+	width: 50%;
+	margin-left: 1.5em;
+	flex-direction: row;
+	
+	h1{
+		font-size: 1.5em;
+		font-weight: $heavy;
+		color: $lightC;
+	}
+	p{
+		line-height: 2em;
+	}
+}
+
+
+.btn{
+	
+	float: right;
+	width: 50%;
+	margin-top: 3em;
+
+	.button{
+		border: 1px solid $lightC;
+		font-size: 1.2em;
+		border-radius: 6px;
+		padding: .5em;
+		color: $lightC;
+		margin: .5em;
+	}
+	
+	.del{
+		color: darkred;
+		border: 1px solid darkred;
+	}
+	
+	.button:hover{
+		background-color: $lightC;
+		color: $whiteC;
+	}
+	
+	.del:hover{
+		background-color: darkred;
+		color: $whiteC;
+		
+	}
+	
+}

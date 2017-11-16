@@ -16,23 +16,29 @@ $result = mysqli_query($dbconnection, $query) or die ('query failed');
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
 
+<meta charset="utf-8">
+<title>View employees</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<?php include 'footer.php';?>
 <body>
 
-
+<div  class="clearFix container">
+<h1>Employee View</h1>
 	<?php
 	
 //----------------------------DISPLAY WHAT FOUND-------------------------------------------------
 	
 	while($row = mysqli_fetch_array($result)){
-		echo '<p><a href="detail.php?id='.$row['id'].'">';
+		echo '<p><a class="nameInfo" href="detail.php?id='.$row['id'].'">';
 		echo $row['last'].', '.$row['first'].' - '.$row['dept'];
 		
 		echo '</a>';
-		echo '<a href="update.php?id='.$row['id'].'"> - update </a>';
+		echo '<a class="update" href="update.php?id='.$row['id'].'"> update </a>';
 		
 		echo '</p>';
 	}
@@ -42,6 +48,6 @@ $result = mysqli_query($dbconnection, $query) or die ('query failed');
 	
 ?>
 
-	<?php include 'footer.php';?>
+	</div>
 </body>
 </html>
