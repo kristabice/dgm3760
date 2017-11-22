@@ -47,18 +47,16 @@
 			</select><br>
 			<label>Bio:<br><textarea name="description"><?php echo $row['description'];?></textarea></label><br>
 			<label>Phone:<br><input type="tel" name="phone" value="<?php echo $row['phone'];?>"></label><br>
+			<label>Email:<br><input type="tel" name="email" value="<?php echo $row['email'];?>"></label><br>
 	
-		
-		</fieldset>
-		<fieldset class="photo">
-			<legend>Photo</legend>
-			<span>Pick a Photo</span>
-			<input type="file" name="photo"><br>
+			
 		</fieldset>
 	
+		<input type="hidden" name="id" value="<?php echo $row['id']; ?>"/>
 		<fieldset>
 		<input type="submit" name="submit" value="Submit" class="submitbtn">
 		</fieldset>
+		
 
 	</form>
 	

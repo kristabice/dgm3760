@@ -6,82 +6,36 @@
   margin: 4em auto; }
   .container .row {
     float: left;
-    width: 20%;
-    padding: 1em;
-    height: 300px;
-    margin-top: 4em;
-    transition: all .2s ease-in-out; }
-    .container .row .details {
-      display: none; }
-    .container .row h1 {
-      color: #314e8b;
-      font-size: 1.2em;
-      font-weight: 800;
-      text-align: center; }
-    .container .row h3 {
-      text-align: center; }
+    width: 150px;
+    height: 450px;
+    margin: 1.6em; }
     .container .row img {
+      width: 100%;
+      box-shadow: 4px 5px 20px -2px #eee; }
+    .container .row h1 {
+      font-size: 1.4em;
+      text-align: center;
       width: 100%; }
-  .container .row:hover .details {
-    display: block;
-    text-align: center;
-    border: 1px solid #121724;
-    color: #121724;
-    padding: .5em;
-    transition: all .2s ease-in-out; }
-  .container .row:hover .details:hover {
-    background-color: #121724;
-    color: #64a2d7;
-    padding: .6em; }
+    .container .row p {
+      text-align: center;
+      font-style: italic;
+      width: 100%; }
 
 /* STYLING THE BODY */
 body {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400; }
 
-a {
-  color: #121724;
-  text-decoration: none; }
-
-.mainMenu {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-/* CSS Document */
 header {
-  margin-top: 2em;
-  height: 15em; }
-  header .imgCont {
-    width: 100%; }
-    header .imgCont img {
-      width: 100%; }
-
-nav {
-  order: 1;
-  width: 20%;
-  align-self: center; }
-  nav ul li {
-    float: left; }
-    nav ul li a {
-      font-size: 1.2em; }
-
-.log {
-  order: 3;
-  width: 20%;
-  align-self: center; }
-  .log a {
-    font-size: 1.2em;
-    text-align: right;
-    float: right; }
-
-.logo {
-  order: 2;
-  width: 20%; }
-  .logo img {
-    width: 100%; }
+  background-color: #C2CFBD;
+  width: 100%;
+  display: flex; }
+  header img {
+    flex-direction: row; }
+  header h1 {
+    font-size: 3em;
+    text-align: center;
+    flex-direction: row; }
 
 /* details scss*/
 .col {
@@ -100,7 +54,7 @@ nav {
   .dRow h1 {
     font-size: 1.5em;
     font-weight: 800;
-    color: #314e8b; }
+    color: #C2CFBD; }
   .dRow h3 {
     font-size: 1.1em;
     letter-spacing: .1em; }
@@ -112,21 +66,21 @@ nav {
   width: 50%;
   margin-top: 3em; }
   .btn .button {
-    border: 1px solid #314e8b;
+    border: 1px solid #C2CFBD;
     font-size: 1.2em;
     border-radius: 6px;
     padding: .5em;
-    color: #314e8b;
+    color: #C2CFBD;
     margin: .5em; }
   .btn .del {
     color: darkred;
     border: 1px solid darkred; }
   .btn .button:hover {
-    background-color: #314e8b;
-    color: #eee; }
+    background-color: #C2CFBD;
+    color: #E3D4B7; }
   .btn .del:hover {
     background-color: darkred;
-    color: #eee; }
+    color: #E3D4B7; }
 
 /* ADD AND EDIT PAGE */
 form {
@@ -137,13 +91,13 @@ fieldset {
   margin: auto; }
   fieldset legend {
     font-size: 1.4em;
-    color: #314e8b;
+    color: #C2CFBD;
     font-weight: 800;
     padding: 1em 0;
     letter-spacing: .1em; }
   fieldset label {
     font-size: 1.2em;
-    color: #314e8b;
+    color: #C2CFBD;
     padding: 1em 0; }
     fieldset label input, fieldset label select, fieldset label textarea {
       padding: .5em;
@@ -162,22 +116,22 @@ fieldset {
   width: 20%;
   padding: 1em;
   font-size: 1em;
-  border: 1px solid #314e8b;
+  border: 1px solid #C2CFBD;
   background-color: transparent;
   border-radius: 5px;
   font-weight: 800;
-  color: #314e8b; }
+  color: #C2CFBD; }
 
 .submitbtn:hover {
-  background-color: #314e8b;
-  color: #eee; }
+  background-color: #C2CFBD;
+  color: #E3D4B7; }
 
 /* footer */
 footer {
   margin-top: 6em;
-  background-color: #314e8b; }
+  background-color: #C2CFBD; }
   footer p {
-    color: #eee;
+    color: #E3D4B7;
     text-align: center;
     padding: 2em; }
 

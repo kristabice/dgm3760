@@ -14,20 +14,17 @@
 <div class="container">
 	
 	<form enctype="multipart/form-data" action="submit.php" method="post">
-		<fieldset><legend>Personal Info:</legend>
-			<label>First Name:<input type="text" name="firstname" value=""></label><br>
-			<label>Last Name:<input type="text" name="lastname" value=""></label><br>
-			<label>Position:	
-			<select name="dept">
-				<option>Internet Tech</option>
-				<option>Web Developement</option>
-				<option>Animation</option>
-				<option>Audio</option>
-				<option>Cinema</option>
+		<fieldset><legend>Movie Info:</legend>
+			<label>Title:<input type="text" name="title" value=""></label><br>
+			<label>Rating:	
+			<select name="rate">
+				<option>G</option>
+				<option>PG</option>
+				<option>PG-13</option>
+				<option>R</option>
+				<option>NR</option>
 			</select><br>
-			<label>Bio:<textarea name="description"></textarea></label><br>
-			<label>Phone:<input type="tel" name="phone"></label><br>
-			<label>Email:<br><input type="tel" name="email" value=""></label><br>
+			<label>About:<textarea name="description"></textarea></label><br>
 			
 			<legend>Photo</legend>
 			<span>Pick a Photo</span>

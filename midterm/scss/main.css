@@ -101,6 +101,9 @@ nav {
     font-size: 1.5em;
     font-weight: 800;
     color: #314e8b; }
+  .dRow h3 {
+    font-size: 1.1em;
+    letter-spacing: .1em; }
   .dRow p {
     line-height: 2em; }
 
@@ -142,7 +145,7 @@ fieldset {
     font-size: 1.2em;
     color: #314e8b;
     padding: 1em 0; }
-    fieldset label input, fieldset label select, fieldset label .photo input, .photo fieldset label input, fieldset label textarea {
+    fieldset label input, fieldset label select, fieldset label textarea {
       padding: .5em;
       margin: .3em 0 2.5em 0;
       width: 100%;
@@ -154,9 +157,6 @@ fieldset {
       height: 200px;
       font-family: "Nunito Sans", sans-serif;
       font-size: .91em; }
-
-.photo legend {
-  font-weight: 400; }
 
 .submitbtn {
   width: 20%;

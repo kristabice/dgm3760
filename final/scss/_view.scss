@@ -1,0 +1,35 @@
+// VIEW.SCSS STYLING 
+
+.container{
+	width: 80%;
+	margin: 4em auto;
+	
+	
+	.row{
+		float: left;
+		width: 150px;
+		height: 450px;
+		margin: 1.6em;
+		
+		
+		img{
+			width: 100%;
+			box-shadow: 4px 5px 20px -2px #eee;
+			
+		}// end of image tag
+		
+		h1{
+			font-size: 1.4em;
+			text-align: center;
+			width: 100%;
+		}
+		
+		p{
+			text-align: center;
+			font-style: italic;
+			width: 100%;
+		}
+	} // end of .row div
+	
+	
+}

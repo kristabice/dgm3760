@@ -8,6 +8,7 @@
 
 	$result = mysqli_query($dbconnect, $query) or die ('query failed utterly');
 ?>
+
 <?php include_once('header.php');?>
 <title>Employee Details</title>
 <?php include_once('nav.php'); ?>
@@ -35,13 +36,32 @@
 
 		echo '</div>';
 		echo '</div>';// column end
+		?>
 		
+		
+			<form method="post" action="email.php?id=<?php echo $row['id'];?>">
+			<fieldset>
+			<legend>Send me a Message:</legend><br>
+			<label>Subject:<br><input type="text" name="subject" required></label>
+			<label>Your Name:<br><input type="text" name="name" required></label>
+			<label>Your Email:<br><input type="text" name="email" required></label>
+			<label>Message:<br><textarea name="emailMess" ></textarea></label>
+			</fieldset>
+			<fieldset>
+			<input type="submit" name="submit" value="Submit" class="submitbtn">
+			</fieldset>
+			</form>	
+			
+			
+		<?php
 		echo '<div class="btn">';
 		echo '<a href = "index.php" class="button" > Back to Home </a>';
 		echo '<a href="edit.php?id='.$row['id'].'" class="button" > Edit </a>';
 		echo '<a href = "delete.php" class="button del" > Delete </a>';
 		echo '</div>'; // end btn
 	}
+	
+		
 	
 	?>
 	

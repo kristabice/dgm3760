@@ -1,13 +1,10 @@
 <?php
 require_once('variables.php');
 
-	$firstname = $_POST['firstname'];
-		$lastname = $_POST['lastname'];
-		$area = $_POST['dept'];
+		$title = $_POST['title'];
+		$rate = $_POST['rate'];
 		$description = $_POST['description'];
-		$phone = $_POST['phone'];
-		$photo = $_POST[photo];
-		$email = $_POST['email'];
+		$photo = $_POST['photo'];
 
 //-------------MAKE PHOTO PATH AND NAME----------------
 
@@ -15,8 +12,8 @@ $ext = pathinfo($_FILES['photo']['name'] , PATHINFO_EXTENSION);
 
 
 
-$filename = 'img/'.$firstname.$lastname.time().'.'.$ext;
-echo '<br>'.$filename;
+$filename = 'img/'.$title.time().'.'.$ext;
+
 
 
 
@@ -30,7 +27,7 @@ if($_FILES['photo']['size'] == 0){
 };
 	
 	
-if($_FILES['photo']['size'] > 204800){
+if($_FILES['photo']['size'] > 504800){
 	
 	echo "OOPS ---  that image size is larger than 200KB";
 	$validImage = false;
@@ -57,13 +54,13 @@ if($validImage == true){
 	move_uploaded_file($tmp_name, $filename);
 	
 	@unlink ($_FILES['photo']['tmp_name']);
-	require_once('variables.php');
+
 	
 	$dbconnect = mysqli_connect(HOST, USER , PASSWORD, DB_NAME) or die('connection lost');
 	
-	$query = "INSERT INTO employee_info ( firstname, lastname, area, phone, description, photo, email) VALUES ('$firstname','$lastname','$area','$phone','$description','$filename','$email')";
+	$query = "INSERT INTO Movies(title, rating, synopsis, photo) VALUES ('$title', '$rate', '$description', '$filename')";
 	
-	$result = mysqli_query($dbconnect, $query) or die('this is not working');
+	$result = mysqli_query($dbconnect, $query) or die('eeek');
 	
 }
 else{

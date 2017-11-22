@@ -1,48 +1,40 @@
 <?php
 require_once('variables.php');
+		$id = $_POST['id'];
+		$firstname = $_POST['firstname'];
+		$lastname = $_POST['lastname'];
+		$area = $_POST['dept'];
+		$description = $_POST['description'];
+		$phone = $_POST['phone'];
+		$photo = $_POST['photo'];
+$email = $_POST['email'];
 
-	$firstname = $_POST['firstname'];
-	$lastname = $_POST['lastname'];
-	$position = $_POST['position'];
-	$phone = $_POST['phone'];
-	$photo = $_POST['photo'];
-	$bio = $_POST['bio'];
 
-	$dbconnection = mysqli_connect(HOST, USER , PASSWORD, DB_NAME) or die('connection lost');
+	require_once('variables.php');
+	if(isset($_POST['submit'])){
+$dbconnection = mysqli_connect(HOST, USER , PASSWORD, DB_NAME) or die('connection lost');
 		
-	$query ="UPDATE employee_info SET firstname= '$firstname' , lastname='$lastname', area='$position', phone='$phone', description='$bio', photo='$photo' WHERE id='$id'";
+	$query ="UPDATE employee_info SET firstname= '$firstname' , lastname='$lastname', area='$area', phone='$phone', description='$description', email='$em' WHERE id='$id'";
 	
 	$result = mysqli_query($dbconnection, $query) or die('query failed');
 	
 	mysqli_close($dbconnection);
-	
+
+	}
 
 ?>
 
-
-<?php include('header.php'); ?>
-<title>Update Database</title>
-
-
+<?php include_once('header.php');?>
+<title>Update</title>
+<?php include_once('nav.php');?>
+<meta http-equiv="refresh" content="5; URL= details.php?id=<?php echo $id; ?>" >
 </head>
-<?php include 'nav.php';?>
 
-<body >
-<div class="clearFix container">
-
-<?php
-	
-	echo "$firstname $lastname <br>";
-	echo "$department <br>";
-	echo "$phone <br>";
-	
-	echo '<img src="'.$filepath.$filename.'" alt="photo"/>';
-
-	
-	
-	
-	
-	?>
-	</div>
+<body>
+<a href="add.php">BACK</a>
+<p><?php echo $firstname.' '.$lastname;?> Was successfully updated in the database!</p>
 </body>
-<?php include 'footer.php';?>
+<?php include_once('footer.php');?>
+
+
+

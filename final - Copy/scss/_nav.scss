@@ -1,0 +1,21 @@
+/* STYLING THE BODY */
+body{
+	font-family: $font;
+	font-weight: $light;
+}
+// styles header tags
+
+header{
+	background-color: $lightC;
+	width: 100%;
+	display: flex;
+	img{
+		flex-direction: row;
+	}
+	
+	h1{
+		font-size: 3em;
+		text-align: center;
+		flex-direction: row;
+	}
+}
