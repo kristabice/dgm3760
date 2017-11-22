@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (isset($_POST['log'])){
 	
 	require_once('variables.php');
@@ -13,26 +14,19 @@ if (isset($_POST['log'])){
 
 
 		// look up user name in database
-		$query = "SELECT * FROM employee_login_info WHERE username = '$username' AND password = ,SHA('$password')";
+		$query = "SELECT * FROM users WHERE username = '$username' AND password = SHA('$password')";
 		$result = mysqli_query($dbconnection, $query) or die('query failed');
 		
 		if(mysqli_num_rows($result) == 1){
 			
 			$row = mysqli_fetch_array($result);
-			echo "this is working <br>";
-			$test = setcookie('username', $row['username']);
-			//setcookie('username', $row['username'], time()+(60*60*24*30), '/');
-			//setcookie('name', $row['name'], time()+(60*60*24*30));
-			//setcookie('email', $row['email'], time()+(60*60*24*30));
+		
+		
 			
-			echo '<pre>';
-			var_dump($test);
-			print_r($row['username']);
-			print_r($_COOKIE);
-			echo '</pre>';
-			echo "this is working";
-			
-			//$_COOKIE['username'] = $row['username'];
+			$_SESSION['username'] = $username;
+			$_SESSION['firstname'] = $row['firstname'];
+			$_SESSION['lastname'] = $row['lastname'];
+	
 			header('Location: index.php');
 		
 			
@@ -40,7 +34,7 @@ if (isset($_POST['log'])){
 		}
 		
 		else{
-			$feedback = '<p> Could not find an accound for '.$_POST['username'].'. Would you like to <a href = "signup.php"> create a new account</a>?</p>';
+			$feedback = '<p> Could not find an account for '.$_POST['username'].'. Would you like to <a href = "signup.php"> create a new account</a>?</p>';
 			
 		
 	
@@ -55,8 +49,7 @@ if (isset($_POST['log'])){
   </head>
   <body >
     <?php include_once('nav.php'); ?>
-    <h1>Log In</h1>
-
+ 
     <div id="home" class="container">
      <div id="main">
 		 <form enctype="multipart/form-data" method="post" action="login.php">
@@ -69,12 +62,13 @@ if (isset($_POST['log'])){
 
 		</fieldset>
 		<input type="submit" name="log" value="Log In" class="submit"><br>
+		<p>Don't have an Account? </p><a href="signup.php">Sign Up!</a>
 		<a href="index.php" class="cancel">Cancel</a>
 
 
 
 	</form>
-    <?php  echo '<p>'.$_COOKIE['username'].'</p>'; ?>
+ 
 
      
    
