@@ -48,9 +48,13 @@ $result = mysqli_query($dbconnect, $query) or die('this is really not working fo
 
 <h2>Comment</h2>
 <?php if(isset($_SESSION['username'])){	?>
-	<form method="post" action="comment.php">
-		<label><img src="img/thumbs up.png"><input type="radio" name="up"></label>
-		<label><img src="img/thumbs down.png"><input type="radio" name="down"></label>
+	<form method="post" action="comment.php" class="action">
+		<div class="rate">
+		<label><img src="img/thumbs up.png"><input type="radio" name="thumb" value="1"></label>
+		</div>
+		<div class="rate">
+		<label><img src="img/thumbs down.png"><input type="radio" name="thumb" value="1"></label>
+		</div>
 		<textarea name="comment"></textarea>
 		<input type="hidden" name="id" value="<? echo $id?>">
 		<input type="submit" name="cSubmit" value="Submit">
