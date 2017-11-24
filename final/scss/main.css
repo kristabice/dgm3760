@@ -8,7 +8,10 @@
     float: left;
     width: 150px;
     height: 450px;
-    margin: 1.6em; }
+    margin: 1.6em;
+    display: inline-block; }
+    .container .row figcaption {
+      height: 63px; }
     .container .row img {
       width: 100%;
       box-shadow: 4px 5px 20px -2px #eee; }
@@ -20,6 +23,22 @@
       text-align: center;
       font-style: italic;
       width: 100%; }
+    .container .row .detail {
+      height: 150px;
+      margin-top: 3.4em;
+      width: 100%;
+      text-align: center; }
+      .container .row .detail a {
+        margin-top: 1.5em;
+        text-decoration: none;
+        color: #728780;
+        padding: .6em;
+        border: 1px solid #728780;
+        width: 90%;
+        margin: auto; }
+      .container .row .detail a:hover {
+        background-color: #728780;
+        color: #E3D4B7; }
 
 /* STYLING THE BODY */
 body {
@@ -30,27 +49,53 @@ header {
   background-color: #C2CFBD;
   width: 100%;
   display: flex; }
-  header img {
-    flex-direction: row; }
-  header h1 {
-    font-size: 3em;
-    text-align: center;
-    flex-direction: row; }
+  header a {
+    text-decoration: none;
+    color: #728780;
+    font-weight: 800; }
+    header a img {
+      flex-direction: row; }
+    header a h1 {
+      font-size: 3em;
+      text-align: center;
+      flex-direction: row;
+      text-decoration: none; }
+
+.welcome {
+  float: right; }
+  .welcome a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #728780;
+    padding: .5em; }
+
+form {
+  width: 45%; }
+  form input.box, form fieldset label select.box, fieldset label form select.box {
+    width: 30;
+    color: #728780;
+    padding: .7em; }
+  form input.search, form fieldset label select.search, fieldset label form select.search {
+    padding: 1.2em;
+    color: #728780;
+    background: none;
+    border: none;
+    transition: all .1s ease-in-out; }
+  form .search:hover {
+    letter-spacing: .04em;
+    color: #695E66; }
 
 /* details scss*/
-.col {
-  display: flex; }
-
 .dImg {
   width: 30%;
-  flex-direction: row; }
+  float: left; }
   .dImg img {
     width: 100%; }
 
 .dRow {
-  width: 50%;
+  width: 45%;
   margin-left: 1.5em;
-  flex-direction: row; }
+  float: right; }
   .dRow h1 {
     font-size: 1.5em;
     font-weight: 800;
@@ -61,26 +106,39 @@ header {
   .dRow p {
     line-height: 2em; }
 
-.btn {
-  float: right;
-  width: 50%;
-  margin-top: 3em; }
-  .btn .button {
-    border: 1px solid #C2CFBD;
-    font-size: 1.2em;
-    border-radius: 6px;
-    padding: .5em;
-    color: #C2CFBD;
-    margin: .5em; }
-  .btn .del {
-    color: darkred;
-    border: 1px solid darkred; }
-  .btn .button:hover {
-    background-color: #C2CFBD;
-    color: #E3D4B7; }
-  .btn .del:hover {
-    background-color: darkred;
-    color: #E3D4B7; }
+h2 {
+  font-size: 1.3em;
+  border-bottom: 1px solid #C2CFBD;
+  padding: 1.5em; }
+
+.rate {
+  width: 30px;
+  float: left;
+  padding: 1em; }
+  .rate label input, .rate fieldset label select, fieldset .rate label select {
+    padding: 1em; }
+  .rate label img {
+    width: 100%; }
+  .rate label input:checked + img, .rate fieldset label select:checked + img, fieldset .rate label select:checked + img {
+    border: 1px solid #C2CFBD; }
+
+form textarea {
+  width: 97%;
+  height: 150px;
+  overflow: hidden; }
+
+.cSubmit {
+  margin-top: 1.2em;
+  width: 25%;
+  color: #728780;
+  padding: 1em;
+  background: white;
+  border: 1px solid #728780;
+  font-size: 1.2em; }
+
+.cSubmit:hover {
+  background: #728780;
+  color: #E3D4B7; }
 
 /* ADD AND EDIT PAGE */
 form {
@@ -125,6 +183,22 @@ fieldset {
 .submitbtn:hover {
   background-color: #C2CFBD;
   color: #E3D4B7; }
+
+/* CSS Document */
+.results img {
+  float: left;
+  width: 95px;
+  padding: 1.2em; }
+.results .descrip {
+  padding: 1em; }
+
+.searchResults {
+  color: #444;
+  line-height: 1.6em; }
+
+.searchStyle {
+  font-weight: 800;
+  color: #3A2401; }
 
 /* footer */
 footer {

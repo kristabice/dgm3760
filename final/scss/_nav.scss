@@ -9,6 +9,11 @@ header{
 	background-color: $lightC;
 	width: 100%;
 	display: flex;
+	
+	a{
+		text-decoration: none;
+		color: $darkC;
+		font-weight: $heavy;
 	img{
 		flex-direction: row;
 	}
@@ -17,5 +22,46 @@ header{
 		font-size: 3em;
 		text-align: center;
 		flex-direction: row;
+		text-decoration: none;
 	}
+	
+	} // end of anchor
+}
+
+.welcome{
+		float: right;
+
+		a{
+			text-decoration: none;
+			font-weight: $heavy;
+			color: $darkC;
+			padding: .5em;
+
+		}
+	}
+
+form{
+	width: 45%;
+	
+	
+	input.box{
+		width: 30;
+		color: $darkC;
+		padding: .7em;
+	}
+	
+	
+	input.search{
+		padding: 1.2em;
+		color: $darkC;
+		background: none;
+		border: none;
+		transition: all .1s ease-in-out;
+		
+	}
+	.search:hover{
+		letter-spacing: .04em;
+		color: $accentC;
+	}
+	
 }

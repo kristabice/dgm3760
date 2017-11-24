@@ -1,11 +1,13 @@
 /* details scss*/
 .col{
-	display: flex;
+	//display: inline-flex;
 }
 
 .dImg {
 	width: 30%;
-	flex-direction: row;
+	float: left;
+	//flex-direction: row;
+	
 	
 	
 	img{
@@ -15,9 +17,10 @@
 
 
 .dRow{
-	width: 50%;
+	width: 45%;
 	margin-left: 1.5em;
-	flex-direction: row;
+	//flex-direction: row;
+	float: right;
 	
 	h1{
 		font-size: 1.5em;
@@ -31,38 +34,57 @@
 	p{
 		line-height: 2em;
 	}
+	
+	
+	
 }
 
-
-.btn{
+h2{
+	font-size: 1.3em;
+	border-bottom: 1px solid $lightC;
+	padding: 1.5em;
+}
+.rate{
+		width: 30px;
+		float: left;
+		padding: 1em;
+	label{
+	input{
 	
-	float: right;
-	width: 50%;
-	margin-top: 3em;
-
-	.button{
-		border: 1px solid $lightC;
-		font-size: 1.2em;
-		border-radius: 6px;
-		padding: .5em;
-		color: $lightC;
-		margin: .5em;
-	}
-	
-	.del{
-		color: darkred;
-		border: 1px solid darkred;
-	}
-	
-	.button:hover{
-		background-color: $lightC;
-		color: $whiteC;
-	}
-	
-	.del:hover{
-		background-color: darkred;
-		color: $whiteC;
+		padding: 1em;
 		
+
+	}
+			img{
+			width: 100%;
+			
+		}
+		
+		input:checked + img{
+		border: 1px solid $lightC;
 	}
 	
+	} // end of label
+}// end of .rate
+
+form{
+	textarea{
+		width: 97%;
+		height: 150px;
+		overflow: hidden;
+	}
+}
+.cSubmit{
+	margin-top: 1.2em;
+	width: 25%;
+	color: $darkC;
+	padding: 1em;
+	background: white;
+	border: 1px solid $darkC;
+	font-size: 1.2em;
+}
+
+.cSubmit:hover{
+	background: $darkC;
+	color: $whiteC;
 }

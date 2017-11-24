@@ -10,7 +10,11 @@
 		width: 150px;
 		height: 450px;
 		margin: 1.6em;
+		display: inline-block;
 		
+		figcaption{
+			height: 63px;
+		}
 		
 		img{
 			width: 100%;
@@ -28,6 +32,30 @@
 			text-align: center;
 			font-style: italic;
 			width: 100%;
+		}
+		
+		
+		.detail{
+			height: 150px;
+			margin-top: 3.4em;
+			width: 100%;
+			text-align: center;
+
+		a{
+			margin-top: 1.5em;
+			text-decoration: none;
+			color: $darkC;
+			padding: .6em;
+			border: 1px solid $darkC;
+			width: 90%;
+			margin: auto;
+			
+		}
+			a:hover{
+				background-color: $darkC;
+				color: $whiteC;
+			}
+		
 		}
 	} // end of .row div
 	

@@ -3,7 +3,7 @@
 	require_once('variables.php');
 	$dbconnect = mysqli_connect(HOST, USER , PASSWORD, DB_NAME) or die('connection lost');
 
-	$query = "SELECT * FROM Movies";
+	$query = "SELECT * FROM Movies ORDER BY title ASC";
 
 	$result = mysqli_query($dbconnect, $query) or die('this is not going to work');
 
@@ -27,10 +27,18 @@
 		<h1><?php echo $row['title'];?></h1>
 		<p>Rating: <?php echo $row['rating'];?></p>
 		<p><?php //echo $row['synopsis'];?></p>
-				<a href="details.php?id=<?php echo $row['id'];?>">View Details</a>
+			
+			
 		</figcaption>
+		
 		</figure>
+		<div class="detail">
+		<a href="details.php?id=<?php echo $row['id'];?>">View Details</a>
+			</div>
+				
+				
 		</div>
+		
 				
 	<?php } ?>
 

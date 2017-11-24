@@ -12,7 +12,7 @@ session_start();
 <div class="container">
 <div class="clearFix"></div>
 <form action="search.php" method="post" enctype="multipart/form-data">
-<div class="search">Search:<input type="text" name="searchB" value=""></div>
+<input type="submit" value="Search" name="Search" class="search"><input type="text" class="box" name="searchB" value=""></div>
 </form>
 
 <?php
@@ -22,18 +22,24 @@ session_start();
 	if(isset($_SESSION['username'])){ ?>
 	
 	<?php if($_SESSION['username'] === $admin){
-		 
+		
+		echo '<div class="admin">';
 		echo '<a href="add.php"> Add Movies</a>';
-		echo  "<p>Welcome, ".$_SESSION['firstname']." ".$_SESSION['lastname']; echo '</p>';
-		echo '<a href="logout.php">Log-Out</a></p>	';	
+		echo '</div>';
+		echo '<div class="welcome">';
+		echo  "<p>Welcome, ".$_SESSION['firstname']." ".$_SESSION['lastname'];
+		echo '<a href="logout.php">Log-Out</a></p>	';
+		echo '</div>';
 	} else{ ?>
- <p>Welcome, <?php echo $_SESSION['firstname']." ".$_SESSION['lastname']; echo '</p>';
-		echo '<a href="logout.php">Log-Out</a></p>	';				
+ <div class="welcome"><p>Welcome, <?php echo $_SESSION['firstname']." ".$_SESSION['lastname']; 
+		echo '<a href="logout.php">Log-Out</a></p>	</div>';				
 	} 
 									}
 		
 		else{ ?>
+		 <div class="welcome">
 	<p>Welcome, 
 	<a href="login.php">Log-in</a></p>
+	 </div>
 	<?php } ?>
 </div>

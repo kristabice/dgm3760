@@ -23,7 +23,7 @@ $result = mysqli_query($dbconnect, $query) or die('this is really not working fo
 <?php
 	while($row = mysqli_fetch_array($result)){
 		
-		echo '<div class="dRow">';
+		echo '<div class="dImg">';
 		
 		echo '<img src="'.$row['photo'].'" alt="movie posters" >';
 		
@@ -34,9 +34,7 @@ $result = mysqli_query($dbconnect, $query) or die('this is really not working fo
 		echo '<h1>'.$row['title'].'</h1>';
 		echo '<p>'.$row['rating'].'</p>';
 		
-		echo '</div>';
-		
-		echo '<div class="dRow">';
+	
 		echo '<p>'.$row['synopsis'].'</p>';
 		
 		echo '</div>';
@@ -44,20 +42,22 @@ $result = mysqli_query($dbconnect, $query) or die('this is really not working fo
 	}
 
 ?>
-
+<div class="clearFix"></div>
 
 <h2>Comment</h2>
 <?php if(isset($_SESSION['username'])){	?>
 	<form method="post" action="comment.php" class="action">
+	<span>Rate:</span>
 		<div class="rate">
 		<label><img src="img/thumbs up.png"><input type="radio" name="thumb" value="1"></label>
 		</div>
 		<div class="rate">
 		<label><img src="img/thumbs down.png"><input type="radio" name="thumb" value="1"></label>
 		</div>
+		<div class="clearFix"></div>
 		<textarea name="comment"></textarea>
 		<input type="hidden" name="id" value="<? echo $id?>">
-		<input type="submit" name="cSubmit" value="Submit">
+		<input type="submit" name="cSubmit" value="Submit" class="cSubmit">
 	</form>
 <?php } 
 		else{
